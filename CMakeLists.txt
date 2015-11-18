@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( rgbdodometry )
+find_package( OpenCV REQUIRED )
+add_executable( rgbdodometry  rgbdodometry.cpp )
+target_link_libraries( rgbdodometry ${OpenCV_LIBS} )
